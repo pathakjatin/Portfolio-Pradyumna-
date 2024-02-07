@@ -13,21 +13,21 @@
         cursor: pointer;
     }
     .logo:hover{
-        transform: scale(1.5);
-        transition: all 0.3s ease-in-out 0s;
+        transform: scale(1.25);
+        transition: all 0.3s ease-in-out ;
     }
     p{
         color: #fff;
     }
     body{
-        max-height: 100%;
-        background-image: url('./Photos/bg.avif');
+        min-height: 100%;
+        background-image: url('https://doitbeforeme.com/wp-content/uploads/2023/03/Minimalist-aesthetic-desktop-wallpaper-4k.webp');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
         position: relative;
-        overflow-x: hidden
+        overflow-x: hidden;
     }
     body::before{
         content: "";
@@ -36,7 +36,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.3);
         z-index: -1;
     }
     header {
@@ -69,7 +69,7 @@
         transition: all 0.3s ease 0s;
     }
     .flex-nav li a:hover{
-        color: #00889a;
+        color: #eb8797;
     }
     .hamburger{
         display: none;
@@ -129,169 +129,27 @@
         justify-content: space-around;
         align-items: center;
     }
-    section{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 400px;
-        padding: 100px 20vw;
+    .pfp{
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
     }
-    .bgcolor1{
-        background-color: #5d413e;
-    }
-    .curve{
-        position: absolute;
+    footer{
         width: 100%;
-        height: 225px;
+        padding: 10px 0px;
+        background-color: #262626;
+        position: fixed;
         bottom: 0;
+        p, .year{
+            text-align: center;
+            font-size: 22px;
+            font-family: 'Courier New', Courier, monospace;
+        }
     }
-    .curve::before{
-        content: '';
-        display: block;
-        position: absolute;
-        border-radius: 100% 50%;
-        width: 55%; 
-        height: 100%;
-        background-color: #6c6b64;  
-        transform: translate(85%,65%); 
-    }
-    .curve::after{
-        content: '';
-        display: block;
-        position: absolute;
-        border-radius: 100% 50%;
-        width: 55%; 
-        height: 100%;
-        background-color: #5d413e;
-        transform: translate(-6%,61%);
-        z-index: 1;
-    }
-    .bubble::after{
-        content: '';
-        border-top-left-radius: 50% 100%;
-        border-top-right-radius: 50% 100%;
-        position: absolute;
-        bottom: 0;
+    .cont{
+        /* background-color: red; */
         width: 100%;
-        height: 85%;
-        background-color: #6c6b64;
-        z-index: -1;
-    }
-    .bgcolor2{
-        background-color: #6c6b64;
-    }
-    .custom-shape-divider-top-1703833559 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-    }
-    
-    .custom-shape-divider-top-1703833559 svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 152px;
-    }
-    
-    .custom-shape-divider-top-1703833559 .shape-fill {
-        fill: #706e66;
-    }
-    .spacer{
-        aspect-ratio: 1500/540;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .layer1{
-        background-image: url("waves.svg");
-    }
-    .custom-shape-divider-top-1703834554 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-    }
-    
-    .custom-shape-divider-top-1703834554 svg {
-        position: relative;
-        display: block;
-        width: calc(119% + 1.3px);
-        height: 166px;
-    }
-    
-    .custom-shape-divider-top-1703834554 .shape-fill {
-        fill: #325051;
-    }
-    .bgcolor3{
-        background-color: #706e66;
-    }
-    .custom-shape-divider-top-1703834697 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-    }
-    
-    .custom-shape-divider-top-1703834697 svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 126px;
-    }
-    .custom-shape-divider-top-1703834851 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg);
-    }
-    
-    .custom-shape-divider-top-1703834851 svg {
-        position: relative;
-        display: block;
-        width: calc(178% + 1.3px);
-        height: 180px;
-    }
-    
-    .custom-shape-divider-top-1703834851 .shape-fill {
-        fill: #5D413E;
-    }
-    .custom-shape-divider-top-1703834697 .shape-fill {
-        fill: #325051;
-    }
-    .bgcolor4{
-        background-color: #325051;
-    }
-    .custom-shape-divider-top-1703834954 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg);
-    }
-    
-    .custom-shape-divider-top-1703834954 svg {
-        position: relative;
-        display: block;
-        width: calc(151% + 1.3px);
-        height: 130px;
-    }
-    
-    .custom-shape-divider-top-1703834954 .shape-fill {
-        fill: #5D413E;
+        height: 500px;
     }
     @media (max-width:1038px){
         h1,li,a,button{
